@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".registerFragment.CompanyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- RAGIONE SOCIALE -->
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="295dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="60dp"
+                android:importantForAutofill="no"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:background="#11000000"
+                android:textSize="16sp"
+                android:drawableStart="@mipmap/ic_account"
+                android:hint="@string/company_name" />
+
+            <!-- PARTITA IVA -->
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="295dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:importantForAutofill="no"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:background="#11000000"
+                android:textSize="16sp"
+                android:drawableStart="@mipmap/ic_document"
+                android:hint="@string/p_iva" />
+
+               <!-- EMAIL -->
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="295dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="240dp"
+                android:importantForAutofill="no"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:background="#11000000"
+                android:textSize="16sp"
+                android:drawableStart="@mipmap/ic_mail"
+                android:hint="@string/email" />
+
+              <!-- PASSWORD -->
+             <EditText
+                 android:id="@+id/editText4"
+                 android:layout_width="295dp"
+                 android:layout_height="70dp"
+                 android:layout_marginTop="330dp"
+                 android:importantForAutofill="no"
+                 android:layout_centerHorizontal="true"
+                 android:ems="10"
+                 android:background="#11000000"
+                 android:drawableStart="@mipmap/ic_password"
+                 android:hint="@string/password"
+                 android:inputType="textPassword" />
+
+              <!-- CONFERMA PASSWORD -->
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="295dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="420dp"
+                android:importantForAutofill="no"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:background="#11000000"
+                android:drawableStart="@mipmap/ic_password"
+                android:hint="@string/conferma_password"
+                android:inputType="textPassword" />
+
+
+             <Button
+                  android:id="@+id/btn_login"
+                  android:layout_width="300dp"
+                  android:layout_height="70dp"
+                  android:layout_marginTop="540dp"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/btn_form"
+                  android:text="@string/confirm"
+                  android:textColor="#FFFFFF"
+                  android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</androidx.core.widget.NestedScrollView>
